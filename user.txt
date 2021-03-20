@@ -1,0 +1,15 @@
+To Create 3 new users: User.objects.create()
+
+To retrieve all the users: User.objects.all()
+
+To retrieve the last user: User.objects.last()
+
+To retrieve the first user: User.objects.first()
+
+To change the last_name of the user with id=3 to Pancakes: third_user = User.objects.get(id=3), third_user.last_name = "Pancakes", third_user.save()
+
+To delete the user with id=2 from the database: second_user = User.objects.get(id=2), second_user.delete()
+
+To Get all users, sorted by their first name: User.objects.all().order_by("first_name")
+
+To Get all users, sorted by their first name in descending order: User.objects.all().order_by("-first_name")
